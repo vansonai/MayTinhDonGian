@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="screen"/>
+<br/>
+<button onclick="setScreen(1)">1</button>
+<button onclick="setScreen(2)">2</button>
+<button onclick="setScreen(3)">3</button>
+<button onclick="setScreen('+')">+</button>
+<br/>
+<button onclick="setScreen(4)">4</button>
+<button onclick="setScreen(5)">5</button>
+<button onclick="setScreen(6)">6</button>
+<button onclick="setScreen('-')">-</button>
+<br/>
+<button onclick="setScreen(7)">7</button>
+<button onclick="setScreen(8)">8</button>
+<button onclick="setScreen(9)">9</button>
+<button onclick="setScreen('x')">x</button>
+<br/>
+<button onclick="setScreen('C')">C</button>
+<button onclick="setScreen(0)">0</button>
+<button onclick="setScreen('=')">=</button>
+<button onclick="setScreen('/')">/</button>
+<p id="output"></p>
+<script>
+    function setScreen (value) {
+        document.getElementById('screen').value += value;
+    }
+
+
+</script>
+</body>
+</html>
